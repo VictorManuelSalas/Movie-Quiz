@@ -815,6 +815,7 @@ export default {
       check20: true, 
       changeView: true,
       duration: 0,
+      length: 0,
       music: [
         {
           audio: "draikyjosh.mp4",
