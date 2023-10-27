@@ -537,6 +537,214 @@
             </div>
 
             <!-- Aqui empieza otro-->
+            <div v-if="check21">
+              <img src="./assets/img/perikles y merlina.jpg" alt="draick" />
+              <ul>
+                <li>Sound #22</li>
+                <li>Answer: Merlina y Perikles</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/locos adams.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check21 = !check21"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+
+            <div v-if="check22">
+              <img src="./assets/img/wasaaaa.jpg" alt="draick" />
+              <ul>
+                <li>Sound #23</li>
+                <li>Answer: Scary Movie</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/scarymovie.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check21 = !check21"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+            <div v-if="check23">
+              <img src="./assets/img/merlina.png" alt="draick" />
+              <ul>
+                <li>Sound #24</li>
+                <li>Answer: Merlina</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/merlina.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check23 = !check23"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+            <div v-if="check24">
+              <img src="./assets/img/oogie boogie2.jpg" alt="draick" />
+              <ul>
+                <li>Sound #25</li>
+                <li>Answer: El extraño mundo de Jack (Oogie bugi)</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/oogie.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check24 = !check24"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+            <div v-if="check25">
+              <img src="./assets/img/coco.jpeg" alt="draick" />
+              <ul>
+                <li>Sound #26</li>
+                <li>Answer: Coco</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/coco.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check25 = !check25"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+            <div v-if="check26">
+              <img src="./assets/img/abracadabra.jpeg" alt="draick" />
+              <ul>
+                <li>Sound #27</li>
+                <li>Answer: Okus pocus (abacadraba)</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/abacadraba.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check26 = !check26"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+            <div v-if="check22">
+              <img src="./assets/img/cadaverdelanovia.jpg" alt="draick" />
+              <ul>
+                <li>Sound #28</li>
+                <li>Answer: El cadaver de la novia</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/cadaverdelanovia.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check21 = !check21"
+              />
+            </div>
+            <!-- Aqui empieza otro-->
+            <div v-if="check22">
+              <img src="./assets/img/chucky.jpg" alt="draick" />
+              <ul>
+                <li>Sound #29</li>
+                <li>Answer: Chucky</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/chuky.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
+              </ul>
+              <input
+                type="checkbox"
+                name=""
+                id="check"
+                @change="check21 = !check21"
+              />
+            </div>
           </div>
           <!-- 
 
@@ -576,6 +784,14 @@ export default {
   data() {
     return {
       test: false,
+      check21: true,
+      check22: true,
+      check23: true,
+      check24: true,
+      check25: true,
+      check26: true,
+      check27: true,
+      check28: true,
       check1: true,
       check2: true,
       check3: true,
@@ -609,7 +825,7 @@ export default {
   },
   mounted() {
     let d = document.querySelectorAll('input[type="checkbox"]');
-    this.length = d.length
+    this.length = d.length;
   },
 };
 </script>
