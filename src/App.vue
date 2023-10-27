@@ -171,7 +171,7 @@ section {
   gap: 1rem;
 }
 #elements div img {
-  width: 250px;
+  width: 150px;
   height:auto;
   border-radius: 1rem;
   margin: 0%;
