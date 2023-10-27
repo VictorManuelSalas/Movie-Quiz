@@ -20,8 +20,8 @@
                 <li>Sound #1</li>
                 <li>Answer: Darek y Josh</li>
                 <li>
-                  <audio controls >
-                    <source 
+                  <audio controls>
+                    <source
                       src="./assets/music/draikyjosh.mp4"
                       type="audio/mpeg"
                     />
@@ -745,15 +745,30 @@
                 <ul>
                   <li>Sound #1</li>
                   <li>Answer: Try to get a lot of corrects answers</li>
+                
                 </ul>
+                <audio id="audio" onende>
+                  <source
+                    src="./assets/music/background.mp4"
+                    type="audio/mpeg"
+                  />
+                </audio>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="30"
+                  viewBox="0 -960 960 960"
+                  width="30"
+                  @click="(play = !play), playMusic(play)"
+                >
+                  <path
+                    :d="
+                      play
+                        ? 'M520-200v-560h240v560H520Zm-320 0v-560h240v560H200Zm400-80h80v-400h-80v400Zm-320 0h80v-400h-80v400Zm0-400v400-400Zm320 0v400-400Z'
+                        : 'M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z'
+                    "
+                  />
+                </svg>
               </div>
-              <audio controls>
-                <source src="./assets/music/background.mp4" type="audio/mpeg" />
-                <p>
-                  Download <a href="myAudio.mp3">MP3</a> or
-                  <a href="myAudio.ogg">OGG</a> audio.
-                </p>
-              </audio>
             </div>
           </span>
         </section>
@@ -769,7 +784,7 @@ export default {
   data() {
     return {
       answer: "",
-      test: false,
+      play: false,
       check21: true,
       check22: true,
       check23: true,
@@ -797,9 +812,9 @@ export default {
       check17: true,
       check18: true,
       check19: true,
-      check20: true,
-      length: 0,
+      check20: true, 
       changeView: true,
+      duration: 0,
       music: [
         {
           audio: "draikyjosh.mp4",
@@ -813,10 +828,40 @@ export default {
     let d = document.querySelectorAll('input[type="checkbox"]');
     this.length = d.length;
   },
+  methods: {
+    playMusic(play) {
+      const miAudio = document.getElementById("audio");
+
+      if (play) {
+        miAudio.play();
+      } else {
+        miAudio.pause();
+      }
+
+      miAudio.addEventListener("timeupdate", () => {
+        const tiempoActual = miAudio.currentTime;
+        this.duration = this.timeSong(tiempoActual)
+      });
+      miAudio.addEventListener("ended", () => {
+        this.play = !this.play;
+      });
+    },
+    timeSong(tiempo) {
+      const minutos = Math.floor(tiempo / 60);
+      const segundos = Math.floor(tiempo % 60);
+      return `${minutos}:${segundos < 10 ? "0" : ""}${segundos}`;
+    },
+  },
 };
 </script>
 
 <style scoped>
+svg {
+  background-color: white;
+  border-radius: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
 #default {
   width: 100%;
   height: 100vh;
@@ -903,7 +948,7 @@ section {
 }
 #elements div img {
   width: 150px;
-  height: auto;
+  height: 150px;
   border-radius: 1rem;
   margin: 0%;
 }
