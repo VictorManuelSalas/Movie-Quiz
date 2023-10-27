@@ -7,14 +7,14 @@
     <main v-if="changeView">
       <h1>Quiz Sounds</h1>
       <div id="container">
-        <strong>Question</strong>
+        <strong>Question ({{ length }})</strong>
         <p>Who is this person?</p>
-        <b>Answer: Chapulin Colorado</b>
+        <b>Answer: Sherk Y Burro</b>
 
         <section>
           <p>Next Sounds</p>
           <div id="elements">
-            <div v-if="checkOne">
+            <div v-if="check1">
               <img src=./assets/img/drackandjosh.png alt="draick" />
               <ul>
                 <li>Sound #1</li>
@@ -36,11 +36,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check1 = !check1"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check2">
               <img src="./assets/img/bob y patrick.jpg" alt="draick" />
               <ul>
                 <li>Sound #2</li>
@@ -63,11 +63,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check2 = !check2"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check3">
               <img src="./assets/img/tortugasdenemo.jpg" alt="draick" />
               <ul>
                 <li>Sound #3</li>
@@ -92,11 +92,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check3 = !check3"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check4">
               <img src="./assets/img/donramon.jpg" alt="draick" />
               <ul>
                 <li>Sound #4</li>
@@ -119,11 +119,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check4 = !check4"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check5">
               <img src="./assets/img/donde estan las rubias.jpg" alt="draick" />
               <ul>
                 <li>Sound #5</li>
@@ -145,11 +145,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check5 = !check5"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check6">
               <img src="./assets/img/crud y capitan.jpg" alt="draick" />
               <ul>
                 <li>Sound #6</li>
@@ -171,11 +171,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check6 = !check6"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check7">
               <img src="./assets/img/gump.jpg" alt="draick" />
               <ul>
                 <li>Sound #7</li>
@@ -194,11 +194,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check7 = !check7"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check8">
               <img src="./assets/img/ron y hermony.jpg" alt="draick" />
               <ul>
                 <li>Sound #8</li>
@@ -220,11 +220,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check8 = !check8"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check9">
               <img src="./assets/img/dombuldor.jpg" alt="draick" />
               <ul>
                 <li>Sound #9</li>
@@ -246,11 +246,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check9 = !check9"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check10">
               <img src="./assets/img/jenji y lord.jpeg" alt="draick" />
               <ul>
                 <li>Sound #10</li>
@@ -272,11 +272,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check10 = !check10"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check11">
               <img src="./assets/img/homero y miljaus.jpg" alt="draick" />
               <ul>
                 <li>Sound #11</li>
@@ -298,11 +298,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check11 = !check11"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check12">
               <img src="./assets/img/tony stark.png" alt="draick" />
               <ul>
                 <li>Sound #12</li>
@@ -324,11 +324,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check12 = !check12"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check13">
               <img src="./assets/img/lord fargaut.jpg" alt="draick" />
               <ul>
                 <li>Sound #13</li>
@@ -350,11 +350,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check13 = !check13"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check14">
               <img src="./assets/img/skiper magadascar.jpg" alt="draick" />
               <ul>
                 <li>Sound #14</li>
@@ -376,11 +376,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check14 = !check14"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check15">
               <img src="./assets/img/mario bross estrella.jpg" alt="draick" />
               <ul>
                 <li>Sound #15</li>
@@ -402,11 +402,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check15 = !check15"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check16">
               <img src="./assets/img/monsterinc 1.jpeg" alt="draick" />
               <ul>
                 <li>Sound #16</li>
@@ -428,11 +428,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check16 = !check16"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check17">
               <img src="./assets/img/burro.jpeg" alt="draick" />
               <ul>
                 <li>Sound #17</li>
@@ -454,11 +454,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check17 = !check17"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check18">
               <img src="./assets/img/locutor spider man.jpeg" alt="draick" />
               <ul>
                 <li>Sound #18</li>
@@ -480,11 +480,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check18 = !check18"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check19">
               <img src="./assets/img/thore.jpg" alt="draick" />
               <ul>
                 <li>Sound #19</li>
@@ -503,11 +503,11 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check19 = !check19"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="checkOne">
+            <div v-if="check20">
               <img
                 src="./assets/img/monster inc pejelagarto.jpg"
                 alt="draick"
@@ -532,7 +532,7 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="checkOne = !checkOne"
+                @change="check20 = !check20"
               />
             </div>
 
@@ -575,9 +575,28 @@ export default {
   components: {},
   data() {
     return {
-      t: "./assets/img/drackandjosh.png",
       test: false,
-      checkOne: true,
+      check1: true,
+      check2: true,
+      check3: true,
+      check4: true,
+      check5: true,
+      check6: true,
+      check7: true,
+      check8: true,
+      check9: true,
+      check10: true,
+      check11: true,
+      check12: true,
+      check13: true,
+      check14: true,
+      check15: true,
+      check16: true,
+      check17: true,
+      check18: true,
+      check19: true,
+      check20: true,
+      length: 0,
       changeView: true,
       music: [
         {
@@ -588,13 +607,14 @@ export default {
       ],
     };
   },
+  mounted() {
+    let d = document.querySelectorAll('input[type="checkbox"]');
+    this.length = d.length
+  },
 };
 </script>
 
 <style scoped>
-#check {
-}
-
 #default {
   width: 100%;
   height: 100vh;
@@ -667,7 +687,7 @@ section {
   margin: 0%;
 }
 #elements {
-  height: 250px;
+  height: fit-content;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
