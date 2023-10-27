@@ -70,16 +70,22 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped> 
+@media screen and (max-width: 425px) {
+  main{
+    background-color: red;
+  }
+}
 main {
-  padding: 0%;
+  padding: 2rem 2rem 0rem 2rem;
+  margin: 0rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 100vw;
-  height: 100vh;
+  width: fit-content;
+  height: fit-content;
   background: linear-gradient(
     131deg,
     rgba(136, 170, 255, 1) 0%,
@@ -88,7 +94,7 @@ main {
 }
 #container {
   background-color: white;
-  width: 100vh;
+  width: 100%;
   height: 70%;
   padding: 2rem 2rem;
   font-size: 1.4rem;
