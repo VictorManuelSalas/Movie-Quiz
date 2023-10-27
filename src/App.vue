@@ -46,7 +46,7 @@
                 </ul>
               </div>
               <audio controls>
-                <source src="myAudio.mp3" type="audio/mpeg" />
+                <source src="./assets/test.ogg" type="audio/mpeg" />
                 <p>
                   Download <a href="myAudio.mp3">MP3</a> or
                   <a href="myAudio.ogg">OGG</a> audio.
@@ -150,11 +150,12 @@ section {
 #elements div {
   padding: 1rem 1rem;
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 #elements div img {
   width: 15%;
-  height: 15%;
+  height: fit-content;
   border-radius: 1rem;
   margin: 0%;
 }
