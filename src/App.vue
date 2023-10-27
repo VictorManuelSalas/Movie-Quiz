@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main v-if="changeView">
+    <main v-if="changeView" id="default">
       <img src="./assets/question.png" alt="" />
       <button @click="changeView = false">Start Game</button>
     </main>
@@ -73,10 +73,14 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 425px) {
-  main {
-    background-color: red;
-  }
+#default{  
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    131deg,
+    rgba(136, 170, 255, 1) 0%,
+    rgba(6, 9, 205, 1) 100%
+  );
 }
 main {
   padding: 2rem 2rem 0rem 2rem;
