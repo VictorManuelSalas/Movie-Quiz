@@ -34,6 +34,9 @@
               </ul>
             </div>
           </div>
+        <!-- 
+
+     
           <span>
             <div id="audio-content">
               <div id="rep">
@@ -55,7 +58,7 @@
                 </p>
               </audio>
             </div>
-          </span>
+          </span>   -->
         </section>
       </div>
     </main>
@@ -168,8 +171,8 @@ section {
   gap: 1rem;
 }
 #elements div img {
-  width: 15%;
-  height: fit-content;
+  width: auto;
+  height:auto;
   border-radius: 1rem;
   margin: 0%;
 }
