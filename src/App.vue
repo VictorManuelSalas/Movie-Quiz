@@ -14,26 +14,41 @@
         <section>
           <p>Next Sounds</p>
           <div id="elements">
-            <div v-for="(data, index) in music" :key="index"> 
-              <img :src="data.img" :alt=data.respuesta />
+            <div>
+              <img src=./assets/img/drackandjosh.png alt="draick" />
               <ul>
-                <li>Sound #{{index+1}}</li>
-                <li>Answer: {{data.respuesta}}</li>
+                <li>Sound #1</li>
+                <li>Answer: Darek y Josh</li>
+                <li>
+                  <audio controls>
+                    <source
+                      src="./assets/music/draikyjosh.mp4"
+                      type="audio/mpeg"
+                    />
+                    <p>
+                      Download <a href="myAudio.mp3">MP3</a> or
+                      <a href="myAudio.ogg">OGG</a> audio.
+                    </p>
+                  </audio>
+                </li>
               </ul>
             </div>
-              
           </div>
           <span>
             <div id="audio-content">
               <div id="rep">
-                <img src="./assets/img/drackandjosh.jpg" alt="" />
+                <img
+                  @click="test = !test"
+                  src="./assets/img/drackandjosh.png"
+                  alt=""
+                />
                 <ul>
                   <li>Sound #1</li>
-                  <li>Answer: {{respuesta}}</li>
+                  <li>Answer: {{ respuesta }}</li>
                 </ul>
               </div>
               <audio controls>
-                <source :src="audio" type="audio/mpeg" />
+                <source src="./assets/music/draikyjosh.mp4" type="audio/mpeg" />
                 <p>
                   Download <a href="myAudio.mp3">MP3</a> or
                   <a href="myAudio.ogg">OGG</a> audio.
@@ -52,14 +67,14 @@ export default {
   name: "App",
   components: {},
   data() {
-    return { audio: "drack&josh.mp4",
+    return {
+      test: false,
       changeView: true,
       music: [
         {
-          audio: "drack&josh.mp4",
-          respuesta: "Drack and Josh" ,
-          img : "./assets/img/drackandjosh.jpg"
-    
+          audio: "draikyjosh.mp4",
+          respuesta: "Drack and Josh",
+          img: "./assets/logo.png",
         },
       ],
     };
