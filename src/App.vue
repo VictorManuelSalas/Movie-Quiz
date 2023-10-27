@@ -8,20 +8,20 @@
       <h1>Quiz Sounds</h1>
       <div id="container">
         <strong>Question ({{ length }})</strong>
-        <p>Who is this person?</p>
-        <b>Answer: Sherk Y Burro</b>
+        <p>Who is this person or movie?</p>
+        <b>Answer: {{ answer }}</b>
 
         <section>
           <p>Next Sounds</p>
           <div id="elements">
-            <div v-if="check1">
+            <div v-if="check1" @click="answer = 'Darek y Josh'">
               <img src=./assets/img/drackandjosh.png alt="draick" />
               <ul>
                 <li>Sound #1</li>
                 <li>Answer: Darek y Josh</li>
                 <li>
-                  <audio controls>
-                    <source
+                  <audio controls >
+                    <source 
                       src="./assets/music/draikyjosh.mp4"
                       type="audio/mpeg"
                     />
@@ -40,7 +40,7 @@
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="check2">
+            <div v-if="check2" @click="answer = 'Bob esponja'">
               <img src="./assets/img/bob y patrick.jpg" alt="draick" />
               <ul>
                 <li>Sound #2</li>
@@ -67,7 +67,7 @@
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="check3">
+            <div v-if="check3" @click="answer = 'Tortugas de nemo (Squirt)'">
               <img src="./assets/img/tortugasdenemo.jpg" alt="draick" />
               <ul>
                 <li>Sound #3</li>
@@ -748,7 +748,7 @@
                 </ul>
               </div>
               <audio controls>
-                <source src="./assets/music/draikyjosh.mp4" type="audio/mpeg" />
+                <source src="./assets/music/background.mp4" type="audio/mpeg" />
                 <p>
                   Download <a href="myAudio.mp3">MP3</a> or
                   <a href="myAudio.ogg">OGG</a> audio.
@@ -768,6 +768,7 @@ export default {
   components: {},
   data() {
     return {
+      answer: "",
       test: false,
       check21: true,
       check22: true,
@@ -803,7 +804,7 @@ export default {
         {
           audio: "draikyjosh.mp4",
           respuesta: "Drack and Josh",
-          img: "./assets/img/chucky.jpg"
+          img: "./assets/img/chucky.jpg",
         },
       ],
     };
@@ -888,7 +889,7 @@ section {
   margin: 0%;
 }
 #elements {
-  height: fit-content;
+  height: 60vh;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -908,7 +909,7 @@ section {
 }
 #elements div ul,
 #rep ul {
-  width: 100%; 
+  width: 100%;
   list-style: none;
 }
 #elements div ul li:first-of-type,
