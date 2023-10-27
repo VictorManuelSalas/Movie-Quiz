@@ -14,39 +14,26 @@
         <section>
           <p>Next Sounds</p>
           <div id="elements">
-            <div>
-              <img src="./assets/logo.png" alt="" />
+            <div v-for="(data, index) in music" :key="index"> 
+              <img :src="data.img" :alt=data.respuesta />
               <ul>
-                <li>Sound #1</li>
-                <li>Answer: Buscando a nemo</li>
+                <li>Sound #{{index+1}}</li>
+                <li>Answer: {{data.respuesta}}</li>
               </ul>
             </div>
-            <div>
-              <img src="./assets/logo.png" alt="" />
-              <ul>
-                <li>Sound #1</li>
-                <li>Answer: Buscando a nemo</li>
-              </ul>
-            </div>
-            <div>
-              <img src="./assets/logo.png" alt="" />
-              <ul>
-                <li>Sound #1</li>
-                <li>Answer: Buscando a nemo</li>
-              </ul>
-            </div>
+              
           </div>
           <span>
             <div id="audio-content">
               <div id="rep">
-                <img src="./assets/logo.png" alt="" />
+                <img src="./assets/img/drackandjosh.jpg" alt="" />
                 <ul>
                   <li>Sound #1</li>
-                  <li>Answer: Buscando a nemo</li>
+                  <li>Answer: {{respuesta}}</li>
                 </ul>
               </div>
               <audio controls>
-                <source src="./assets/test2.mp4" type="audio/mpeg" />
+                <source :src="audio" type="audio/mpeg" />
                 <p>
                   Download <a href="myAudio.mp3">MP3</a> or
                   <a href="myAudio.ogg">OGG</a> audio.
@@ -65,15 +52,23 @@ export default {
   name: "App",
   components: {},
   data() {
-    return {
+    return { audio: "drack&josh.mp4",
       changeView: true,
+      music: [
+        {
+          audio: "drack&josh.mp4",
+          respuesta: "Drack and Josh" ,
+          img : "./assets/img/drackandjosh.jpg"
+    
+        },
+      ],
     };
   },
 };
 </script>
 
 <style scoped>
-#default{  
+#default {
   width: 100%;
   height: 100vh;
   background: linear-gradient(
