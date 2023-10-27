@@ -14,7 +14,7 @@
         <section>
           <p>Next Sounds</p>
           <div id="elements">
-            <div>
+            <div v-if="checkOne">
               <img src=./assets/img/drackandjosh.png alt="draick" />
               <ul>
                 <li>Sound #1</li>
@@ -32,6 +32,7 @@
                   </audio>
                 </li>
               </ul>
+              <input type="checkbox" name="" id="check" @change="checkOne = !checkOne">
             </div>
           </div>
         <!-- 
@@ -72,6 +73,7 @@ export default {
   data() {
     return {
       test: false,
+      checkOne: true,
       changeView: true,
       music: [
         {
@@ -86,6 +88,11 @@ export default {
 </script>
 
 <style scoped>
+#check{
+  
+}
+
+ 
 #default {
   width: 100%;
   height: 100vh;
