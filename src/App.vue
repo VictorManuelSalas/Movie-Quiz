@@ -168,7 +168,7 @@ section {
   padding: 1rem 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 #elements div img {
   width: 150px;
