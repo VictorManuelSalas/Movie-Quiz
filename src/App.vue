@@ -586,7 +586,7 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="check21 = !check21"
+                @change="check22 = !check22"
               />
             </div>
             <!-- Aqui empieza otro-->
@@ -623,10 +623,7 @@
                 <li>Answer: El extraño mundo de Jack (Oogie bugi)</li>
                 <li>
                   <audio controls>
-                    <source
-                      src="./assets/music/oogie.mp4"
-                      type="audio/mpeg"
-                    />
+                    <source src="./assets/music/oogie.mp4" type="audio/mpeg" />
                     <p>
                       Download <a href="myAudio.mp3">MP3</a> or
                       <a href="myAudio.ogg">OGG</a> audio.
@@ -649,10 +646,7 @@
                 <li>Answer: Coco</li>
                 <li>
                   <audio controls>
-                    <source
-                      src="./assets/music/coco.mp4"
-                      type="audio/mpeg"
-                    />
+                    <source src="./assets/music/coco.mp4" type="audio/mpeg" />
                     <p>
                       Download <a href="myAudio.mp3">MP3</a> or
                       <a href="myAudio.ogg">OGG</a> audio.
@@ -694,7 +688,7 @@
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="check22">
+            <div v-if="check27">
               <img src="./assets/img/cadaverdelanovia.jpg" alt="draick" />
               <ul>
                 <li>Sound #28</li>
@@ -716,21 +710,18 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="check21 = !check21"
+                @change="check27 = !check27"
               />
             </div>
             <!-- Aqui empieza otro-->
-            <div v-if="check22">
+            <div v-if="check28">
               <img src="./assets/img/chucky.jpg" alt="draick" />
               <ul>
                 <li>Sound #29</li>
                 <li>Answer: Chucky</li>
                 <li>
                   <audio controls>
-                    <source
-                      src="./assets/music/chuky.mp4"
-                      type="audio/mpeg"
-                    />
+                    <source src="./assets/music/chuky.mp4" type="audio/mpeg" />
                     <p>
                       Download <a href="myAudio.mp3">MP3</a> or
                       <a href="myAudio.ogg">OGG</a> audio.
@@ -742,24 +733,18 @@
                 type="checkbox"
                 name=""
                 id="check"
-                @change="check21 = !check21"
+                @change="check28 = !check28"
               />
             </div>
           </div>
-          <!-- 
 
-     
           <span>
             <div id="audio-content">
               <div id="rep">
-                <img
-                  @click="test = !test"
-                  src="./assets/img/drackandjosh.png"
-                  alt=""
-                />
+                <img src="./assets/question.png" alt="text" />
                 <ul>
                   <li>Sound #1</li>
-                  <li>Answer: {{ respuesta }}</li>
+                  <li>Answer: Try to get a lot of corrects answers</li>
                 </ul>
               </div>
               <audio controls>
@@ -770,7 +755,7 @@
                 </p>
               </audio>
             </div>
-          </span>   -->
+          </span>
         </section>
       </div>
     </main>
@@ -818,7 +803,7 @@ export default {
         {
           audio: "draikyjosh.mp4",
           respuesta: "Drack and Josh",
-          img: "./assets/logo.png",
+          img: "./assets/img/chucky.jpg"
         },
       ],
     };
@@ -923,6 +908,7 @@ section {
 }
 #elements div ul,
 #rep ul {
+  width: 100%; 
   list-style: none;
 }
 #elements div ul li:first-of-type,
