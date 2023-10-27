@@ -1,10 +1,10 @@
 <template>
   <div>
-    <main v-if="!changeView">
+    <main v-if="changeView">
       <img src="./assets/question.png" alt="" />
       <button @click="changeView = false">Start Game</button>
     </main>
-    <main v-if="changeView">
+    <main v-if="!changeView">
       <h1>Sound #1</h1>
       <div id="container">
         <strong>Question</strong>
@@ -46,7 +46,7 @@
                 </ul>
               </div>
               <audio controls>
-                <source src="./assets/test.ogg" type="audio/mpeg" />
+                <source src="./assets/test2.mp4" type="audio/mpeg" />
                 <p>
                   Download <a href="myAudio.mp3">MP3</a> or
                   <a href="myAudio.ogg">OGG</a> audio.
@@ -124,15 +124,15 @@ section {
   flex-direction: column;
   gap: 1rem;
 }
-#audio-content{ border-radius: 1rem; padding: 0.5rem 2rem;
-   background: rgba(136, 170, 255, 1);
+#audio-content {
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  background: rgba(136, 170, 255, 1);
 }
 #rep {
- 
   display: flex;
   align-items: center;
- 
- 
+
   color: white;
 }
 #rep img {
