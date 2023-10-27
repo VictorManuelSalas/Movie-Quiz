@@ -37,12 +37,14 @@
             </div>
           </div>
           <span>
-            <div id="rep">
-              <img src="./assets/logo.png" alt="" />
-              <ul>
-                <li>Sound #1</li>
-                <li>Answer: Buscando a nemo</li>
-              </ul>
+            <div id="audio-content">
+              <div id="rep">
+                <img src="./assets/logo.png" alt="" />
+                <ul>
+                  <li>Sound #1</li>
+                  <li>Answer: Buscando a nemo</li>
+                </ul>
+              </div>
               <audio controls>
                 <source src="myAudio.mp3" type="audio/mpeg" />
                 <p>
@@ -70,9 +72,9 @@ export default {
 };
 </script>
 
-<style scoped> 
+<style scoped>
 @media screen and (max-width: 425px) {
-  main{
+  main {
     background-color: red;
   }
 }
@@ -120,15 +122,17 @@ b {
 section {
   display: flex;
   flex-direction: column;
-  gap: 1rem; 
+  gap: 1rem;
+}
+#audio-content{ border-radius: 1rem; padding: 0.5rem 2rem;
+   background: rgba(136, 170, 255, 1);
 }
 #rep {
-  position: relative;
-  border-radius: 1rem;
+ 
   display: flex;
   align-items: center;
-  padding: 0.5rem 2rem;
-  background: rgba(136, 170, 255, 1);
+ 
+ 
   color: white;
 }
 #rep img {
@@ -150,6 +154,7 @@ section {
 }
 #elements div img {
   width: 15%;
+  height: auto;
   border-radius: 1rem;
   margin: 0%;
 }
@@ -162,15 +167,12 @@ section {
   font-weight: bolder;
 }
 audio {
-  position: absolute;
-  right: 3%;
-  width: 20%; /* Ancho personalizado */
-  
+  width: 100%;
+  /* Ancho personalizado */
 }
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-pause-button,
 audio::-webkit-media-controls-mute-button {
-   
 }
 img {
   width: 40%;
