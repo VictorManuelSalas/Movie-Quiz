@@ -154,7 +154,7 @@ section {
 }
 #elements div img {
   width: 15%;
-  height: auto;
+  height: 15%;
   border-radius: 1rem;
   margin: 0%;
 }
